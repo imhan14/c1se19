@@ -1,0 +1,24 @@
+$sidebarWidth: 350px;
+
+.wrapper {
+  display: flex;
+  background: url("./../../assets/images/bg.jpg") no-repeat center/cover;
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.sidebar {
+  flex-shrink: 0;
+  background-color: pink;
+  height: 100vh;
+}
+.main {
+  width: 100%;
+}
+.content {
+  margin-left: 300px;
+  min-height: 100vh;
+  padding: 80px;
+  padding-top: 100px;
+}
