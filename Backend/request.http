@@ -1,0 +1,19 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "username": "test2",
+    "password": "1234",
+    "confirmPassword": "1234"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "1234"
+}
