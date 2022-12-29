@@ -13,8 +13,8 @@ import "react-toastify/dist/ReactToastify.css";
 const cx = classNames.bind(styles);
 
 let initialValues = {
-  email: "giathai1505@gmail.com",
-  password: "123",
+  email: "",
+  password: "",
 };
 
 const validationSchema = Yup.object({

@@ -78,7 +78,7 @@ export default function Register() {
                       <Field
                         className="rounded-full px-3 py-2 bg-transparent border border-solid border-white text-white"
                         name="username"
-                        placeholder="Gia Thai"
+                        placeholder="Your Name"
                       />
                       {errors.username && touched.username ? (
                         <div className="text-[#f23030]">{errors.username}</div>
@@ -86,7 +86,7 @@ export default function Register() {
                       <Field
                         className="rounded-full px-3 py-2 bg-transparent border border-solid border-white text-white"
                         name="email"
-                        placeholder="giathai1505@gmail.com"
+                        placeholder="youremail@gmail.com"
                       />
                       {errors.email && touched.email ? (
                         <div className="text-[#f23030]">{errors.email}</div>
