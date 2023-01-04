@@ -22,7 +22,7 @@ const sendMailCtrl = async (to, action, url, txt) => {
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: "quanghannguyen14@gmail.com",
+        user: "xo360kps3@gmail.com",
         clientId: CLIENT_ID,
         clientSecret: CLIENT_SECRET,
         refreshToken: REFRESH_TOKEN,
@@ -32,7 +32,7 @@ const sendMailCtrl = async (to, action, url, txt) => {
 
     const info = await transport.sendMail(
       {
-        from: '"Music App" <quanghannguyen14@gmail.com>', // sender address
+        from: '"Melody for Emotion" <xo360kps3@gmail.com>', // sender address
         to: to, // list of receivers
         subject: `[Music-app] ${action}`, // Subject line
         html: `
