@@ -55,10 +55,10 @@ const Profile = () => {
         <p>
           <span className="font-semibold ">Email : </span> {user?.email}
         </p>
-        <p>
+        {/* <p>
           <span className="font-semibold "></span> My Hobbies & interested:
           walking, play soccer
-        </p>
+        </p> */}
         <div className="flex gap-2 justify-end">
           <Button
             className="text-white bg-primary"
