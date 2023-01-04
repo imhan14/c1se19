@@ -16,9 +16,9 @@ const radioOptions = [
 ];
 
 const validationSchema = Yup.object({
-  name: Yup.string().required("Enter your name"),
-  artist: Yup.string().required("Enter artist name"),
-  description: Yup.string().required("Enter your description"),
+  name: Yup.string().required("Please enter your name"),
+  artist: Yup.string().required("Please enter artist name"),
+  description: Yup.string().required("Please enter your description"),
 });
 
 const AddNewModal = ({ isShow, onOk, onCancel, editField, type }) => {
@@ -55,12 +55,14 @@ const AddNewModal = ({ isShow, onOk, onCancel, editField, type }) => {
     try {
       const result = await axios.post("http://localhost:5000/api/emotion");
       if (result.data.emotions) {
-        let newListEmotions = result.data.emotions.map((item, index) => {
-          return {
-            key: item._id,
-            value: item.name,
-          };
-        });
+        let newListEmotions = result.data.emotions
+          .filter((item) => item.level === 2)
+          .map((item, index) => {
+            return {
+              key: item._id,
+              value: item.name,
+            };
+          });
         setListEmotions(newListEmotions);
       }
     } catch (error) {

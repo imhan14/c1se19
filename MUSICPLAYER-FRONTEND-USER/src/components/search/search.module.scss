@@ -3,11 +3,14 @@
     display: flex;
     border-radius: 20px;
     align-items: center;
-    background-color: #413158;
+    // background: rgba(255, 255, 255, 0.3);
+        background-color: #413158;
     margin-left: 100px;
     padding: 0 0 0 15px;
     position: relative;
     z-index: 100;
+    
+
 }
 
 .icon-search {
@@ -76,28 +79,32 @@
 .search-content {
     width: 500px;
     min-height: 200px;
-    border-radius: 20px;
+    border-radius:20px;
     padding-top: 30px;
-    background-color: #413158;
+        background-color: #413158;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+   
+    
 }
 .search {
     &-item {
-        list-style-type: none;
-        padding: 10px 0;
-    }
-
+            list-style-type: none;
+            padding: 10px 0 ;
+        }
+    
     &-link {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        color: white;
-        p {
-            margin-left: 10px;
-            margin-bottom: 0;
-        }
-        &:hover {
+            text-decoration: none;
+            display: flex; 
+            align-items: center;
             color: white;
-        }
+            p {
+                margin-left: 10px;
+                margin-bottom: 0;
+            }
+            &:hover {
+                color: white;
+            }
+            
     }
 }
